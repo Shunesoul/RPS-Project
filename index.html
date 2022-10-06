@@ -8,17 +8,18 @@
     </head>
         <body>
             <script>
-                const choices = [
-                    "rock",
-                    "paper",
-                    "scizzor"
-                ]
+                const myArray = ["Rock", "Paper", "Scissors"];
 
-                function getComputerChoice(){
-                    return choices[(Math.random()*choices.length)]
+                function getComputerChoice() {
+                    return myArray[~~(Math.random() * myArray.length)];
+                }   
+                function playRound(playerSelection, computerSelection) {
+                // your code here!
                 }
-               console.log(choices)
-               console.log(choices[(Math.random()*choices.length)])
+ 
+                const playerSelection = "rock";
+                const computerSelection = getComputerChoice();
+                console.log(playRound(playerSelection, computerSelection));
             </script>
         </body>
 </html>
