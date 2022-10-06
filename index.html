@@ -8,7 +8,17 @@
     </head>
         <body>
             <script>
-                
+                const choices = [
+                    "rock",
+                    "paper",
+                    "scizzor"
+                ]
+
+                function getComputerChoice(){
+                    return choices[(Math.random()*choices.length)]
+                }
+               console.log(choices)
+               console.log(choices[(Math.random()*choices.length)])
             </script>
         </body>
 </html>
